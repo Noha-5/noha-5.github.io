@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 // messages reveal animation
 function revealMessage(tl) {
-  tl.from([".my-messages>li", ".visitor-messages>div", ".new-messages>li"], {
+  tl.from([".my-messages>li", ".visitor-messages>div"], {
     opacity: 0,
     y: -10,
     stagger: 0.3,
