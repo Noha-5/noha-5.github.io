@@ -1,0 +1,430 @@
+/* Global styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  background-color: rgb(237, 230, 240);
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+}
+
+/* Scroll To Top Button */
+#scrollTop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 99;
+  width: 2.5rem;
+  border: 0;
+  border-radius: 50px;
+  padding: 0.6rem 0.6rem 0.4rem;
+  fill: rgb(42, 27, 65);
+  background-color: rgba(221, 221, 221, 0.842);
+}
+
+/* Hero Header */
+
+.hero {
+  background: radial-gradient(
+    circle at 50% 80%,
+    rgb(89, 69, 117) 0%,
+    rgb(42, 27, 65) 40%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+/* Hero Dashboard */
+
+.dashboard {
+  width: 100%;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.dashboard-glass {
+  padding: 1rem 0.5rem;
+  margin-inline: auto;
+  width: 80%;
+  background: rgba(160, 160, 160, 0.42);
+  box-shadow: 0 8px 32px 0 rgba(19, 20, 27, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 25px;
+  border: 7px solid rgb(192, 192, 192);
+  box-shadow: inset 0rem 0rem 1rem rgba(19, 20, 27, 0.37);
+  position: relative;
+}
+
+/* Visible on mobile decorative wide reactangle */
+.dashboard-glass::before {
+  display: block;
+  content: "";
+  position: relative;
+  background-color: rgba(19, 20, 27, 0.37);
+  box-shadow: inset 0rem 0rem 0.1rem rgba(19, 20, 27);
+  border-radius: 50px;
+  width: 3rem;
+  height: 0.5rem;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.intro-container {
+  text-align: center;
+  padding-block: 1.5rem;
+  margin-inline: 0.5rem;
+  background: radial-gradient(
+    ellipse at 50% 30%,
+    rgb(89, 69, 117) 0%,
+    rgb(42, 27, 65) 80%
+  );
+  border-radius: 15px;
+  transform-origin: center;
+}
+
+.about-me-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2ch;
+  font-size: 0.7rem;
+  color: rgb(221, 221, 221);
+}
+
+.about-me-link:hover > .about-me-icon,
+.dashboard-nav .link:hover > .icon {
+  translate: 0 -0.3rem;
+}
+
+.about-me-icon,
+.dashboard-nav .icon {
+  display: block;
+  margin-inline: auto;
+  width: 3rem;
+  margin-bottom: 0.3rem;
+  transition: translate 0.3s ease-out;
+}
+
+.intro {
+  color: rgb(221, 221, 221);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-block: 0.5rem;
+}
+
+.intro-paragraph {
+  display: none;
+}
+
+.intro-mobile {
+  background-color: rgba(221, 221, 221, 0.842);
+  box-shadow: 1px 1px 0px 0px rgb(143, 143, 143),
+    5px 5px 2px rgba(65, 70, 78, 0.3), -1px 0 0px rgba(221, 221, 221, 0.904);
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  color: rgb(47, 42, 51);
+  font-size: 0.8rem;
+  border-radius: 50px;
+}
+
+.dashboard-nav {
+  margin-bottom: 2.5rem;
+  padding-inline: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.dashboard-nav > .link {
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.dashboard-nav .contact-me-icon,
+.dashboard-nav .skills-icon {
+  /* Positioning text to center of icon */
+  position: relative;
+  left: 0.4rem;
+  width: 4rem;
+}
+
+/* Moving icon down */
+.dashboard-nav .contact-me-icon,
+.social-link > .icon {
+  margin-bottom: -3px;
+}
+
+.dashboard-nav .cv-icon {
+  width: 2.5rem;
+}
+
+.shelf {
+  display: none;
+}
+
+.dashboard-glass-sidebar {
+  display: none;
+}
+
+/* Hero images */
+
+.hero-images {
+  max-width: 800px;
+  margin-inline: auto;
+  position: relative;
+  bottom: 6rem;
+  pointer-events: none;
+}
+
+.hero-images .desktop {
+  display: none;
+}
+
+.hero-images .mobile {
+  display: block;
+}
+
+/* Hero Media Queries */
+
+@media (min-width: 40rem) {
+  .hero {
+    background: radial-gradient(
+      ellipse at 50% 30%,
+      rgb(42, 27, 65) 0%,
+      rgb(19, 17, 17) 90%
+    );
+    padding-inline: 5%;
+  }
+
+  /* dashboard */
+
+  .dashboard {
+    max-width: 850px;
+    display: grid;
+    grid-template-rows: 10px auto 10px;
+    grid-template-columns: 1fr 20px 3fr;
+  }
+
+  .dashboard-glass {
+    padding-block-start: 2rem;
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    border-width: 1px;
+    box-shadow: none;
+  }
+
+  .dashboard-glass::before {
+    display: none;
+  }
+
+  /* Dashborad Sidebar */
+
+  .dashboard-glass-sidebar {
+    /* For large screens sidebar will appear */
+    display: block;
+    background: rgba(173, 173, 173, 0.643);
+    box-shadow: 0 8px 32px 0 rgba(51, 54, 77, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+
+  .intro-container > .about-me-link {
+    display: none;
+  }
+
+  .dashboard-glass-sidebar > .about-me-link {
+    margin-block-start: 2rem;
+    width: 100%;
+    text-transform: unset;
+    letter-spacing: normal;
+  }
+
+  .about-me-icon {
+    width: 4rem;
+  }
+
+  .dashboard-glass-sidebar .name {
+    text-align: center;
+    word-spacing: 0.5ch;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(221, 221, 221);
+  }
+
+  .sidebar-nav {
+    margin-block-start: 2rem;
+  }
+
+  .sidebar-nav > a {
+    display: block;
+    color: rgb(47, 42, 51);
+    text-decoration: none;
+    padding-block: 0.5rem;
+    padding-inline-start: 2rem;
+    transition: background-color 0.5s ease;
+    border-block: 1px solid transparent;
+  }
+
+  .sidebar-nav > a:hover {
+    border-image: linear-gradient(to right, rgb(221, 221, 221), transparent) 1;
+    background-color: rgba(167, 167, 167, 0.39);
+  }
+
+  /* Dashboard Main Section Header */
+
+  .intro-container {
+    margin-inline-start: 3rem;
+    background: none;
+  }
+
+  .intro {
+    color: rgb(221, 221, 221);
+    text-align: left;
+    font-size: 2.2rem;
+  }
+
+  .intro-paragraph {
+    display: block;
+    color: rgba(221, 221, 221, 0.842);
+    width: 60%;
+    text-align: left;
+  }
+
+  /* Intro for mobile */
+  .intro-mobile {
+    display: none;
+  }
+
+  /* Dashboard Main Nav */
+
+  .dashboard-nav {
+    margin-inline: 1.5rem;
+    margin-bottom: 10rem;
+    /* Removing align-items:baseline; so the shelfs align */
+    align-items: stretch;
+    gap: 3rem 2rem;
+  }
+
+  .dashboard-nav > .link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    position: relative;
+  }
+
+  .dashboard-nav > .social-link {
+    display: none;
+  }
+
+  .dashboard-nav > .link > .icon {
+    width: 3.5rem;
+  }
+  .dashboard-nav > .link > .skills-icon {
+    width: 5.5rem;
+  }
+  .dashboard-nav > .link > .contact-me-icon {
+    width: 5rem;
+  }
+
+  .dashboard-nav > .link > span {
+    font-size: 1rem;
+  }
+
+  .contact-link-text {
+    position: relative;
+    right: 0.5rem;
+    top: 5%;
+  }
+
+  /* Shelf */
+
+  .shelf {
+    display: block;
+    position: absolute;
+    top: 35%;
+    width: 8rem;
+    height: 100px;
+    border-color: rgb(158, 157, 161);
+    border-top: 30px solid rgba(39, 28, 53, 0.37);
+    background-color: rgb(158, 157, 161);
+    transform: perspective(0.3em) rotateX(-0.5deg) scale(1, 0.08);
+    border-radius: 10px;
+    pointer-events: none;
+  }
+
+  /* Shelf shadow */
+
+  .dashboard-nav > .link::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 2.1rem;
+    width: 8rem;
+    height: 100px;
+    background-color: rgba(12, 10, 15, 0.411);
+    transform: perspective(0.3em) rotateX(3deg) scale(1, 0.3);
+    filter: blur(15px);
+    border-bottom-left-radius: 40px;
+    pointer-events: none;
+  }
+
+  .contact-link-text ~ .shelf {
+    left: 1rem;
+  }
+
+  /* Hero images */
+  .hero-images {
+    bottom: 12rem;
+  }
+
+  .hero-images .desktop {
+    display: block;
+  }
+
+  .hero-images .mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 50rem) {
+  .hero-images {
+    bottom: 15rem;
+  }
+
+  .intro {
+    font-size: 2.5rem;
+  }
+}

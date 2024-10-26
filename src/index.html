@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <!-- Meta Tags -->
+    <meta name="author" content="Noha Hamed" />
+    <meta
+      name="description"
+      content="Noha Hamed web developer portfolio website."
+    />
+    <meta
+      name="keywords"
+      content="Noha Hamed, Web developer,Portfolio Website, developer website, developer portfolio, Web developer website, developer portfolio website, web developer portfolio website, frontend developer, frontend developer portfolio website, software developer, software developer portfolio website, backend developer,backend developer website, backend developer portfolio website"
+    />
+    <!-- Open graph -->
+    <meta property="og:image" itemprop="image" content="" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Noha Hamed Portfolio Website" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Noha Hamed Portfolio Website" />
+    <meta
+      property="og:description"
+      content="Noha Hamed web developer portfolio website showcasing projects and contact info."
+    />
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="Noha Hamed Portfolio Website" />
+    <meta
+      name="twitter:description"
+      content="Noha Hamed web developer portfolio website showcasing projects and contact info."
+    />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:site" content="Noha Hamed portfolio website." />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- Js files -->
+    <script type="module" defer src="js/typing.js"></script>
+    <script type="module" defer src="js/bounce.js"></script>
+    <script type="module" defer src="js/about-parallax.js"></script>
+    <script type="module" defer src="js/dot-grow-shrink.js"></script>
+    <script type="module" defer src="js/project-load-more.js"></script>
+    <script type="module" defer src="js/about-text-reveal.js"></script>
+    <script type="module" defer src="js/contact-chat.js"></script>
+    <script type="module" defer src="js/contact-form.js"></script>
+    <script type="module" defer src="js/scroll-to-top.js"></script>
+    <title>Noha Hamed Portfolio</title>
+  </head>
+  <body>
+    <!-- Scroll to top button -->
+    <button type="button" id="scrollTop" title="go to top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+        />
+      </svg>
+    </button>
+    <!-- Hero & Nav -->
+    <header class="hero">
+      <section class="dashboard">
+        <!-- Dashboard Main Section -->
+        <div class="dashboard-glass">
+          <!-- Intro Header -->
+          <section class="intro-container">
+            <a href="#" class="about-me-link" title="About me">
+              <img
+                class="about-me-icon"
+                src="images/about-me.png"
+                alt="About me"
+              />
+              Noha Hamed
+            </a>
+            <h1 class="intro">
+              Hi, I&apos;m
+              <span class="intro-text"></span>
+            </h1>
+            <p class="intro-paragraph">
+              I build websites using modern web technologies.
+            </p>
+          </section>
+
+          <!-- Intro message for mobile -->
+          <p class="intro-mobile">
+            I build websites using modern web technologies.
+          </p>
+
+          <!-- Dashborad Navigation -->
+          <nav class="dashboard-nav">
+            <a href="#section-projects" class="link" title="projects">
+              <img
+                class="projects-icon icon"
+                src="images/projects.png"
+                alt="projects"
+              />
+              <span>Projects</span>
+              <hr class="shelf" />
+            </a>
+            <a href="#section-skills" class="link" title="Skills">
+              <img
+                class="skills-icon icon"
+                src="images/skills.png"
+                alt="Skills"
+              />
+              <span>Skills</span>
+              <hr class="shelf" />
+            </a>
+            <a
+              href="Noha-Hamed-CV-8-24.pdf"
+              download="Noha Hamed CV"
+              class="link"
+              title="Download CV"
+            >
+              <img class="cv-icon icon" src="images/cv.png" alt="CV" />
+              <span>CV</span>
+              <hr class="shelf" />
+            </a>
+            <a
+              href="#section-contact"
+              class="link contact-link"
+              title="Contact me"
+            >
+              <img
+                class="contact-me-icon icon"
+                src="images/contact.png"
+                alt="Contact me"
+              />
+              <span class="contact-link-text">Contact</span>
+              <hr class="shelf" />
+            </a>
+            <!-- Social links -->
+            <a
+              href="https://linkedin.com/in/noha-hamed-nh5"
+              class="link social-link"
+              title="LinkedIn"
+            >
+              <img
+                class="icon"
+                src="images/social/linkedin.png"
+                alt="LinkedIn"
+              />
+              <span class="">LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/Noha-5"
+              class="link social-link"
+              title="Github"
+            >
+              <img class="icon" src="images/social/github.png" alt="Github" />
+              <span class="">Github</span>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Dashboard Sidebar (Visible on Desktop) -->
+        <div class="dashboard-glass-sidebar">
+          <a href="#section-about" class="about-me-link" title="About me">
+            <img
+              class="about-me-icon"
+              src="images/about-me.png"
+              alt="About me"
+            />
+            <h1 class="name">Noha Hamed</h1>
+          </a>
+          <aside>
+            <nav class="sidebar-nav">
+              <a href="#section-projects">Projects</a>
+              <a href="#section-skills">Skills</a>
+              <a href="Noha-Hamed-CV-8-24.pdf" download="Noha Hamed CV"
+                >Download CV</a
+              >
+              <a href="#section-contact">Contact me</a>
+              <a href="https://linkedin.com/in/noha-hamed-nh5">LinkedIn</a>
+              <a href="https://github.com/Noha-5">Github</a>
+            </nav>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Hero Images -->
+      <section class="hero-images">
+        <img class="desktop" src="images/hero-img.png" alt="" />
+        <div class="mobile">
+          <img class="mobile" src="images/hero-img2.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- Skills & About Section -->
+
+    <section class="about-container">
+      <!-- Skills Section -->
+      <div class="skill-container">
+        <h2 id="section-skills" class="skill-heading"></h2>
+
+        <ul class="skills">
+          <li>
+            <img
+              class="skill-logo"
+              src="images/skills/html5.png"
+              alt="html5 logo"
+            />
+            <h3 class="skill-name">HTML5</h3>
+          </li>
+          <li>
+            <img
+              class="skill-logo"
+              src="images/skills/css3.png"
+              alt=" css3 logo"
+            />
+            <h3 class="skill-name">CSS3</h3>
+          </li>
+          <li>
+            <img
+              class="skill-logo"
+              src="images/skills/js.png"
+              alt="javascript logo"
+            />
+            <h3 class="skill-name">Javascript</h3>
+          </li>
+          <li>
+            <img
+              class="skill-logo"
+              src="images/skills/php.png"
+              alt="php logo"
+            />
+            <h3 class="skill-name">PHP</h3>
+          </li>
+          <li>
+            <img
+              class="skill-logo"
+              src="images/skills/mySql.png"
+              alt="MySql logo"
+            />
+            <h3 class="skill-name">SQL</h3>
+          </li>
+          <li>
+            <img
+              class="skill-logo"
+              src="images/skills/tailwind.png"
+              alt="Tailwind css logo"
+            />
+            <h3 class="skill-name">TailwindCSS</h3>
+          </li>
+          <li>
+            <img
+              class="skill-logo"
+              src="images/skills/git.png"
+              alt="git logo"
+            />
+            <h3 class="skill-name">Git</h3>
+          </li>
+          <li>
+            <img
+              class="skill-logo"
+              src="images/skills/react.png"
+              alt="react logo"
+            />
+            <h3 class="skill-name">React</h3>
+          </li>
+        </ul>
+      </div>
+
+      <!-- About Section -->
+      <section class="about">
+        <!-- Parallax animation -->
+
+        <div class="about-parallax">
+          <div class="about-parallax-container">
+            <img class="moon" src="images/moon.svg" alt="" />
+            <img class="bird" src="images/flying-bird.png" alt="" />
+            <img class="cloud" src="images/cloud.png" alt="" />
+            <img class="window" src="images/window-frame.png" alt="" />
+          </div>
+          <img class="about-sofa" src="images/work-desk.png" alt="" />
+        </div>
+
+        <!-- About content -->
+
+        <div class="about-content">
+          <h2 id="section-about" class="about-heading">About me</h2>
+          <div class="split-word">
+            <p>
+              Hi. Welcome to my portfolio. My name is Noha Hamed. I am a web
+              developer living in Riyadh, Saudi Arabia.
+            </p>
+            <p>
+              I have a diploma in Information Systems Management. After getting
+              my diploma, I decided to pursue my career in web development
+              further, and I recently graduated with an associate degree in web
+              design and development.
+            </p>
+            <p>
+              I'm currently learning the React ecosystem. I am constantly
+              expanding my skills and looking for a role in a collaborative
+              environment where I can learn from other team members and industry
+              professionals.
+            </p>
+            <p>
+              Besides web development, I am really interested in art. Nowadays I
+              am learning blender to make 3D art and integrate 3D in web
+              development.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Projects section -->
+    <main class="projects-container">
+      <div class="dot-container">
+        <div class="dot"></div>
+      </div>
+      <h2 id="section-projects" class="project-heading">Projects</h2>
+      <ul class="project-cards-container">
+        <li class="project-card">
+          <img
+            class="project-img"
+            src="images/projects/tandoori-calandlaan.png"
+            alt="Tandoori Calandlaan project"
+          />
+          <section class="project-content">
+            <h3 class="project-title">Tandoori Calandlaan</h3>
+            <p class="project-description">
+              A website for a restaurant in Amsterdam showcasing their menu,
+              location and contact information.
+            </p>
+            <div class="technologies">
+              <img src="images/skills/html5.png" alt="hTML5" />
+              <img src="images/skills/css3.png" alt="CSS3" />
+              <img src="images/skills/js.png" alt="Javascript" />
+            </div>
+          </section>
+          <div class="project-links">
+            <a
+              class="website-link"
+              href="https://noha-5.github.io/Tandoori-Calandlaan/"
+              target="_blank"
+            >
+              <img src="images/projects/website.png" alt="website www icon" />
+              <span>Go to website</span>
+            </a>
+            <a
+              class="code-link"
+              href="https://github.com/Noha-5/Tandoori-Calandlaan"
+              target="_blank"
+            >
+              <img src="images/projects/github.png" alt="github logo" />
+              <span>Go to code</span>
+            </a>
+          </div>
+        </li>
+
+        <li class="project-card">
+          <img
+            class="project-img"
+            src="images/projects/parallax.png"
+            alt="Parallax project"
+          />
+          <section class="project-content">
+            <h3 class="project-title">Parallax Effect</h3>
+            <p class="project-description">
+              Showing an example of parallax effect on scroll using landscape
+              illustration.
+            </p>
+            <div class="technologies">
+              <img src="images/skills/html5.png" alt="hTML5" />
+              <img src="images/skills/css3.png" alt="CSS3" />
+              <img src="images/skills/js.png" alt="Javascript" />
+            </div>
+          </section>
+          <div class="project-links">
+            <a
+              class="website-link"
+              href="https://noha-5.github.io/ParallaxEffect/"
+              target="_blank"
+            >
+              <img src="images/projects/website.png" alt="website www icon" />
+              <span>Go to website</span>
+            </a>
+            <a
+              class="code-link"
+              href="https://github.com/Noha-5/ParallaxEffect"
+              target="_blank"
+            >
+              <img src="images/projects/github.png" alt="github logo" />
+              <span>Go to code</span>
+            </a>
+          </div>
+        </li>
+
+        <li class="project-card">
+          <img
+            class="project-img"
+            src="images/projects/tailwind.png"
+            alt="Tailwind Css project"
+          />
+          <section class="project-content">
+            <h3 class="project-title">Soft UI</h3>
+            <p class="project-description">
+              Using Tailwind CSS to develop the website user interface.
+            </p>
+            <div class="technologies">
+              <img src="images/skills/html5.png" alt="hTML5" />
+              <img src="images/skills/tailwind.png" alt="tailwind css" />
+            </div>
+          </section>
+          <div class="project-links">
+            <a
+              class="website-link"
+              href="https://noha-5.github.io/TailwindCss-Practice/build/index.html"
+              target="_blank"
+            >
+              <img src="images/projects/website.png" alt="website www icon" />
+              <span>Go to website</span>
+            </a>
+            <a
+              class="code-link"
+              href="https://github.com/Noha-5/TailwindCss-Practice"
+              target="_blank"
+            >
+              <img src="images/projects/github.png" alt="github logo" />
+              <span>Go to code</span>
+            </a>
+          </div>
+        </li>
+
+        <li class="project-card">
+          <img
+            class="project-img"
+            src="images/projects/php-products.png"
+            alt="Simple PHP & MySql project"
+          />
+          <section class="project-content">
+            <h3 class="project-title">Products List</h3>
+            <p class="project-description">
+              Simple PHP & MySql project to add and mass delete products.
+            </p>
+            <div class="technologies">
+              <img src="images/skills/php.png" alt="php" />
+              <img src="images/skills/js.png" alt="javascript" />
+              <img src="images/skills/mySql.png" alt="mysql" />
+              <img src="images/skills/css3.png" alt="css" />
+            </div>
+          </section>
+          <div class="project-links">
+            <a
+              class="website-link"
+              href="https://noha-phpproject.infinityfreeapp.com/"
+              target="_blank"
+            >
+              <img src="images/projects/website.png" alt="website www icon" />
+              <span>Go to website</span>
+            </a>
+            <a
+              class="code-link"
+              href="https://github.com/Noha-5/phpProject"
+              target="_blank"
+            >
+              <img src="images/projects/github.png" alt="github logo" />
+              <span>Go to code</span>
+            </a>
+          </div>
+        </li>
+
+        <li class="project-card">
+          <img
+            class="project-img"
+            src="images/projects/react-travel-journal.png"
+            alt="react travel journal"
+          />
+          <section class="project-content">
+            <h3 class="project-title">Travel Journal</h3>
+            <p class="project-description">
+              Listing the places I have visited using react.
+            </p>
+            <div class="technologies">
+              <img src="images/skills/react.png" alt="react" />
+              <img src="images/skills/css3.png" alt="css" />
+            </div>
+          </section>
+          <div class="project-links">
+            <a
+              class="website-link"
+              href="https://noha-5.github.io/react-travel-journal/"
+              target="_blank"
+            >
+              <img src="images/projects/website.png" alt="website www icon" />
+              <span>Go to website</span>
+            </a>
+            <a
+              class="code-link"
+              href="https://github.com/Noha-5/react-travel-journal"
+              target="_blank"
+            >
+              <img src="images/projects/github.png" alt="github logo" />
+              <span>Go to code</span>
+            </a>
+          </div>
+        </li>
+
+        <li class="project-card">
+          <img
+            class="project-img"
+            src="images/projects/react-meme.png"
+            alt="react meme generator"
+          />
+          <section class="project-content">
+            <h3 class="project-title">Meme Generator</h3>
+            <p class="project-description">
+              A meme generator fetching different meme images and the ability to
+              add custom text using react.
+            </p>
+            <div class="technologies">
+              <img src="images/skills/react.png" alt="react" />
+              <img src="images/skills/css3.png" alt="css" />
+            </div>
+          </section>
+          <div class="project-links">
+            <a
+              class="website-link"
+              href="https://noha-5.github.io/react-meme-generator/"
+              target="_blank"
+            >
+              <img src="images/projects/website.png" alt="website www icon" />
+              <span>Go to website</span>
+            </a>
+            <a
+              class="code-link"
+              href="https://github.com/Noha-5/react-meme-generator"
+              target="_blank"
+            >
+              <img src="images/projects/github.png" alt="github logo" />
+              <span>Go to code</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <button type="button" class="load-more">See More</button>
+      <button type="button" class="see-less">See Less</button>
+    </main>
+
+    <!-- Contact & Footer sections -->
+    <div class="contact-footer-container">
+      <!-- Contact Section -->
+      <section class="contact">
+        <div class="wave"></div>
+        <h2 id="section-contact" class="contact-heading">Contact me</h2>
+        <img
+          class="contact-bg-img"
+          src="images/contact/contact-bg.png"
+          alt=""
+        />
+        <div class="chat-box">
+          <div class="scroll-container">
+            <!-- My Messsages -->
+            <ul class="my-messages">
+              <li>
+                <img src="images/about-me.png" alt="" />
+                <p>Thank you for scolling till the end.🌻</p>
+              </li>
+              <li>
+                <img src="images/about-me.png" alt="" />
+                <p>
+                  If you want to collaborate, or just want to say hi, fill the
+                  form below to send me a message. Or just email me at
+                  <a href="mailto:wardahamed521@gmail.com"
+                    >wardahamed521@gmail.com</a
+                  >
+                </p>
+              </li>
+              <li>
+                <img src="images/about-me.png" alt="" />
+                <p>I'd love to hear from you.</p>
+              </li>
+            </ul>
+
+            <!-- Contact Form  -->
+            <!-- Visitor Messages -->
+            <form class="visitor-messages" id="contact-form">
+              <div>
+                <input
+                  type="text"
+                  required
+                  id="name"
+                  name="from_name"
+                  placeholder="Enter your name"
+                />
+                <img src="images/contact/visitor-profile.png" alt="" />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  required
+                  id="email"
+                  name="from_email"
+                  placeholder="Enter your email"
+                />
+                <img src="images/contact/visitor-profile.png" alt="" />
+              </div>
+              <div>
+                <textarea
+                  required
+                  name="message"
+                  id="message"
+                  placeholder="Enter your message"
+                  maxlength="500"
+                ></textarea>
+                <img src="images/contact/visitor-profile.png" alt="" />
+              </div>
+              <!-- Send button -->
+              <button type="submit" class="send-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer>
+        <div class="footer-sign">
+          <img class="sign" src="images/footer/nh-sign.png" alt="" /><img
+            class="flower"
+            src="images/footer/n.png"
+            alt=""
+          />
+        </div>
+
+        <!-- Footer navigation -->
+        <nav class="footer-nav">
+          <hr />
+          <ul>
+            <li><a href="#section-about">About</a></li>
+            <li><a href="#section-projects">Projects</a></li>
+            <li><a href="#section-skills">Skills</a></li>
+            <li>
+              <a href="Noha-Hamed-CV-8-24.pdf" download="Noha Hamed CV">CV</a>
+            </li>
+            <li><a href="#section-contact">Contact</a></li>
+            <li class="illustration">
+              Illustration by
+              <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"
+                >Icons 8</a
+              >
+              from <a href="https://icons8.com/illustrations">Ouch!</a>
+            </li>
+          </ul>
+          <hr />
+        </nav>
+
+        <div class="social">
+          <a href="https://linkedin.com/in/noha-hamed-nh5"
+            ><img src="images/footer/linkedIn.png" alt="Linked In profile"
+          /></a>
+          <a href="https://github.com/Noha-5"
+            ><img src="images/footer/github.png" alt="Github profile"
+          /></a>
+          <p class="developer">
+            <small>Designed & Developed by Noha Hamed</small>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
